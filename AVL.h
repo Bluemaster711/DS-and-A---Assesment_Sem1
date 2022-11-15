@@ -1,7 +1,3 @@
-// CMP201.2022/23 Assessed Exercise 2 header file
-// Date:   November 2022
-// Author: William Kavanagh
-
 #pragma once
 class AVL
 {
@@ -10,7 +6,7 @@ public:
 	AVL* left;
 	AVL* right;
 	int height;
-	
+
 	AVL(int n)
 	{
 		data = n;
@@ -27,6 +23,7 @@ public:
 	AVL* deleteNode(AVL* r, int key);
 	AVL* leftRotate(AVL* r);
 	AVL* rightRotate(AVL* r);
+	AVL* minValue(AVL* r);
 	int max(int a, int b);
 
 };
